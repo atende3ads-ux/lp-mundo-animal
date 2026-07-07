@@ -291,7 +291,10 @@ footer ul{list-style:none;display:flex;flex-direction:column;gap:11px}
 footer ul li{display:flex;align-items:flex-start;gap:9px;font-size:.92rem;color:#a7bfb7}
 footer ul li svg{width:17px;height:17px;color:var(--primary);flex-shrink:0;margin-top:3px}
 footer ul a:hover{color:#fff}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.10);padding-top:22px;text-align:center;font-size:.86rem;color:#7f978e}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.10);padding-top:22px;text-align:center;font-size:.86rem;color:#7f978e;display:flex;flex-direction:column;gap:6px;align-items:center}
+.foot-credit .heart{color:var(--accent)}
+.foot-credit a{color:#cfe0da;font-weight:600;transition:color .2s}
+.foot-credit a:hover{color:#fff}
 
 /* botão flutuante emergência mobile */
 .floating-emg{
@@ -696,7 +699,10 @@ footer ul a:hover{color:#fff}
         </ul>
       </div>
     </div>
-    <div class="foot-bottom">© 2026 Mundo Animal · Clínica Veterinária. Todos os direitos reservados.</div>
+    <div class="foot-bottom">
+      <span>© 2026 Mundo Animal · Clínica Veterinária. Todos os direitos reservados.</span>
+      <span class="foot-credit">Desenvolvido com <span class="heart">♥</span> por <a href="https://3ads.com.br" target="_blank" rel="noopener">3ADS</a></span>
+    </div>
   </div>
 </footer>
 
