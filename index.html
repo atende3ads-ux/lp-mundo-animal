@@ -128,6 +128,7 @@ header{
     rgba(245,251,249,.12) 58%, transparent 68%);
 }
 .hero .hero-copy{max-width:600px}
+.hero-photo-m{display:none}
 .hero-badge{
   display:inline-flex;align-items:center;gap:10px;
   background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow-sm);
@@ -328,14 +329,16 @@ footer ul a:hover{color:#fff}
   .logo>span{white-space:nowrap}
   .logo small{font-size:.62rem}
   .nav-cta .btn-emergency{display:none}
-  /* imagem mobile como fundo da seção: texto no topo (área clara), pets embaixo */
-  .hero{
-    background-image:url('assets/hero-mobile.png');
-    background-position:center bottom;
-    padding:30px 0 clamp(250px,72vw,360px);
-  }
+  /* mobile: sem imagem esmaecida atrás do texto; pets viram foto nítida embaixo */
+  .hero{background-image:none;padding:28px 0 40px}
+  .hero-overlay{display:none}
   .hero .hero-copy{max-width:100%}
-  .hero-overlay{background:linear-gradient(180deg,var(--bg) 0%,rgba(245,251,249,.93) 38%,rgba(245,251,249,.5) 60%,transparent 82%)}
+  .hero-photo-m{
+    display:block;margin-top:26px;height:330px;border-radius:22px;
+    background-image:url('assets/hero-mobile.png');
+    background-size:cover;background-position:center 46%;background-repeat:no-repeat;
+    box-shadow:var(--shadow-md);
+  }
   .hero-paths{grid-template-columns:1fr}
   .hero-trust{
     flex-direction:column;align-items:flex-start;gap:11px;font-size:.9rem;
@@ -441,6 +444,8 @@ footer ul a:hover{color:#fff}
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 6L9 17l-5-5"/></svg>+ de 30 anos de experiência em longevidade animal</span>
       </div>
     </div>
+    <!-- foto dos pets — visível só no mobile -->
+    <div class="hero-photo-m" role="img" aria-label="Cão e gato atendidos na Mundo Animal"></div>
   </div>
 </section>
 
