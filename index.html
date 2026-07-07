@@ -99,14 +99,8 @@ header{
   border-bottom:1px solid var(--border);
 }
 .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
-.logo{display:flex;align-items:center;gap:11px;font-family:var(--ff-title);font-weight:800;font-size:1.22rem;color:var(--t1)}
-.logo-mark{
-  width:42px;height:42px;border-radius:13px;flex-shrink:0;
-  background:linear-gradient(135deg,var(--primary),var(--primary-deep));
-  display:grid;place-items:center;color:#fff;box-shadow:var(--shadow-sm);
-}
-.logo-mark svg{width:24px;height:24px}
-.logo small{display:block;font-family:var(--ff-body);font-weight:500;font-size:.68rem;letter-spacing:.04em;color:var(--t3)}
+.logo{display:flex;align-items:center}
+.logo-img{height:46px;width:auto;display:block}
 .nav-links{display:flex;align-items:center;gap:30px}
 .nav-links a{font-weight:500;color:var(--t2);font-size:.96rem;transition:color .2s}
 .nav-links a:hover{color:var(--primary-deep)}
@@ -290,8 +284,7 @@ header{
 /* ===================== FOOTER ===================== */
 footer{background:var(--t1);color:#cfe0da;padding:56px 0 30px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:38px}
-footer .logo{color:#fff}
-footer .logo small{color:#89a89d}
+footer .logo-img{height:56px}
 footer p{color:#a7bfb7;font-size:.94rem;margin-top:14px;max-width:320px}
 footer h4{color:#fff;font-family:var(--ff-title);font-size:1rem;margin-bottom:16px;font-weight:600}
 footer ul{list-style:none;display:flex;flex-direction:column;gap:11px}
@@ -325,9 +318,7 @@ footer ul a:hover{color:#fff}
 @media (max-width:640px){
   .wrap{padding:0 18px}
   .nav-phone span{display:none}
-  .logo{font-size:1.02rem}
-  .logo>span{white-space:nowrap}
-  .logo small{font-size:.62rem}
+  .logo-img{height:40px}
   .nav-cta .btn-emergency{display:none}
   /* mobile: sem imagem esmaecida atrás do texto; pets viram foto nítida embaixo */
   .hero{background-image:none;padding:28px 0 40px}
@@ -371,10 +362,7 @@ footer ul a:hover{color:#fff}
 <header>
   <div class="wrap nav">
     <a href="#" class="logo">
-      <span class="logo-mark">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 12.5a2 2 0 100-4 2 2 0 000 4zm5-4a2 2 0 100-4 2 2 0 000 4zm5 0a2 2 0 100-4 2 2 0 000 4zm5 4a2 2 0 100-4 2 2 0 000 4zM12 13c-2.8 0-5 2.5-5 4.5C7 19.4 8.6 20 12 20s5-.6 5-2.5C17 15.5 14.8 13 12 13z"/></svg>
-      </span>
-      <span>Mundo Animal<small>Clínica Veterinária 24h</small></span>
+      <img class="logo-img" src="assets/logo-verde.png" alt="Mundo Animal - Clínica Veterinária e Pet Shop">
     </a>
     <nav class="nav-links">
       <a href="#servicos">Serviços</a>
@@ -690,8 +678,7 @@ footer ul a:hover{color:#fff}
     <div class="foot-grid">
       <div>
         <a href="#" class="logo">
-          <span class="logo-mark"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 12.5a2 2 0 100-4 2 2 0 000 4zm5-4a2 2 0 100-4 2 2 0 000 4zm5 0a2 2 0 100-4 2 2 0 000 4zm5 4a2 2 0 100-4 2 2 0 000 4zM12 13c-2.8 0-5 2.5-5 4.5C7 19.4 8.6 20 12 20s5-.6 5-2.5C17 15.5 14.8 13 12 13z"/></svg></span>
-          <span>Mundo Animal<small>Clínica Veterinária 24h</small></span>
+          <img class="logo-img" src="assets/logo-branca.png" alt="Mundo Animal - Clínica Veterinária e Pet Shop">
         </a>
         <p>Atendimento veterinário completo 24 horas. Porque seu pet merece o melhor, sempre.</p>
       </div>
