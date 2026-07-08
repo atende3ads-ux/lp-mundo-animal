@@ -162,14 +162,15 @@ header{
 /* ===================== STATS / SELOS ANIMADOS ===================== */
 .stats{padding:20px 0 70px}
 .stats-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+  display:grid;grid-template-columns:repeat(5,1fr);gap:20px;
   background:var(--surface);border:1px solid var(--border);border-radius:26px;
-  padding:38px 28px;box-shadow:var(--shadow-sm);
+  padding:38px 24px;box-shadow:var(--shadow-sm);
 }
 .stat{text-align:center;position:relative}
 .stat + .stat::before{content:"";position:absolute;left:-10px;top:50%;transform:translateY(-50%);width:1px;height:52px;background:var(--border)}
 .stat .num{font-family:var(--ff-title);font-weight:800;font-size:clamp(2.1rem,4vw,2.9rem);color:var(--primary-deep);line-height:1}
 .stat .num .suf{font-size:1.3rem;color:var(--primary)}
+.stat .num .suf.star{color:#FFB800;font-size:1.6rem}
 .stat .lbl{color:var(--t2);font-size:.92rem;margin-top:8px;font-weight:500}
 .stat .live{display:inline-flex;align-items:center;gap:7px;margin-top:8px;font-size:.82rem;font-weight:600;color:var(--primary-deep);background:var(--primary-soft);padding:4px 12px;border-radius:999px}
 
@@ -374,11 +375,11 @@ footer ul a:hover{color:#fff}
       <a href="#contato">Contato</a>
     </nav>
     <div class="nav-cta">
-      <a href="tel:+5562982400542" class="nav-phone">
+      <a href="tel:+5562981890399" class="nav-phone">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
-        <span>(62) 98240-0542</span>
+        <span>(62) 98189-0399</span>
       </a>
-      <a href="tel:+5562982400542" class="btn btn-emergency" style="padding:11px 20px;font-size:.92rem"><span class="dot"></span>Emergência 24h</a>
+      <a href="tel:+5562981890399" class="btn btn-emergency" style="padding:11px 20px;font-size:.92rem"><span class="dot"></span>Emergência 24h</a>
     </div>
   </div>
 </header>
@@ -408,7 +409,7 @@ footer ul a:hover{color:#fff}
             Meu pet precisa agora
           </span>
           <p>Emergência ou pet em risco? Fale direto com a equipe de plantão.</p>
-          <a href="tel:+5562982400542" class="btn btn-emergency">
+          <a href="tel:+5562981890399" class="btn btn-emergency">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
             Ligar para emergência
           </a>
@@ -454,11 +455,15 @@ footer ul a:hover{color:#fff}
         <span class="live"><span class="dot dot-live" style="width:7px;height:7px"></span>ativo agora</span>
       </div>
       <div class="stat">
-        <div class="num"><span class="suf">+</span><span class="count" data-to="30">0</span></div>
-        <div class="lbl">anos em longevidade animal</div>
+        <div class="num"><span class="count" data-to="4.7">0</span><span class="suf star">★</span></div>
+        <div class="lbl">de 179 avaliações</div>
       </div>
       <div class="stat">
-        <div class="num"><span class="count" data-to="6">0</span></div>
+        <div class="num"><span class="count" data-to="100">0</span></div>
+        <div class="lbl">de NPS · satisfação e lealdade</div>
+      </div>
+      <div class="stat">
+        <div class="num"><span class="suf">+</span><span class="count" data-to="10">0</span></div>
         <div class="lbl">especialidades num só lugar</div>
       </div>
     </div>
@@ -630,7 +635,7 @@ footer ul a:hover{color:#fff}
         <p>Se é uma emergência, cada minuto conta. Nossa equipe de plantão está pronta para atender agora mesmo.</p>
       </div>
       <!-- CTA VARIAÇÃO 3 -->
-      <a href="tel:+5562982400542" class="btn btn-white btn-lg">
+      <a href="tel:+5562981890399" class="btn btn-white btn-lg">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
         Emergência? Fale com a equipe 24h
       </a>
@@ -647,7 +652,7 @@ footer ul a:hover{color:#fff}
       <p class="lead">Escolha o melhor horário para a consulta de rotina do seu pet ou ligue direto se for emergência.</p>
       <ul>
         <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><!-- COPY -->R. C-209, 386 - Jardim América, Goiânia - GO, 74270-220<small>Nossa localização</small></div></li>
-        <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></span><div><!-- COPY -->(62) 98240-0542<small>Telefone e WhatsApp</small></div></li>
+        <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></span><div><!-- COPY -->(62) 98189-0399<small>Telefone e WhatsApp</small></div></li>
         <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><!-- COPY -->Aberto 24 horas<small>Todos os dias, sem exceção</small></div></li>
       </ul>
     </div>
@@ -668,8 +673,8 @@ footer ul a:hover{color:#fff}
             <option>Outro</option>
           </select>
         </div>
-        <a href="tel:+5562982400542" class="btn btn-primary">Marque Agora - Atendimento Imediato</a>
-        <div class="contact-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round"/></svg>É emergência? <a href="tel:+5562982400542" style="color:var(--accent-deep);font-weight:600;margin-left:4px">Ligue agora 24h</a></div>
+        <a href="tel:+5562981890399" class="btn btn-primary">Marque Agora - Atendimento Imediato</a>
+        <div class="contact-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round"/></svg>É emergência? <a href="tel:+5562981890399" style="color:var(--accent-deep);font-weight:600;margin-left:4px">Ligue agora 24h</a></div>
       </form>
     </div>
   </div>
@@ -689,7 +694,7 @@ footer ul a:hover{color:#fff}
         <h4>Contato</h4>
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>R. C-209, 386 - Jardim América, Goiânia - GO, 74270-220</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+5562982400542">(62) 98240-0542</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+5562981890399">(62) 98189-0399</a></li>
         </ul>
       </div>
       <div>
@@ -707,7 +712,7 @@ footer ul a:hover{color:#fff}
 </footer>
 
 <!-- botão flutuante emergência (mobile) -->
-<a href="tel:+5562982400542" class="btn btn-emergency floating-emg"><span class="dot"></span>Emergência 24h</a>
+<a href="tel:+5562981890399" class="btn btn-emergency floating-emg"><span class="dot"></span>Emergência 24h</a>
 
 <script>
 (function(){
@@ -728,13 +733,14 @@ footer ul a:hover{color:#fff}
   function runCount(){
     if(counted) return; counted = true;
     document.querySelectorAll('.count').forEach(function(el){
-      var to = +el.getAttribute('data-to'), dur = 1400, start = null;
-      if(reduce){ el.textContent = to; return; }
+      var raw = el.getAttribute('data-to'), to = parseFloat(raw), dec = raw.indexOf('.')>=0, dur = 1400, start = null;
+      function fmt(v){ return dec ? v.toFixed(1).replace('.', ',') : Math.round(v); }
+      if(reduce){ el.textContent = fmt(to); return; }
       function step(ts){
         if(!start) start = ts;
         var p = Math.min((ts-start)/dur,1);
         var eased = 1 - Math.pow(1-p,3);
-        el.textContent = Math.round(eased*to);
+        el.textContent = fmt(eased*to);
         if(p<1) requestAnimationFrame(step);
       }
       requestAnimationFrame(step);
