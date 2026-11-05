@@ -2,11 +2,95 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mundo Animal · Clínica Veterinária 24h</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mundo Animal · Clínica Veterinária 24h em Goiânia</title>
+<meta name="description" content="Clínica veterinária 24 horas em Goiânia (Jardim América). Atendimento emergencial, internação, cirurgia, exames e suporte imediato para cães e gatos, todos os dias.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://emergencia.mundoanimalvet.com.br/">
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W8F2RVS');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Pixel do Tintim -->
+<script>
+    (function(window, document, script) {
+        if (!window.tt) {
+            window.tt = window.tt || {};
+
+            c = document.getElementsByTagName('head')[0];
+            k = document.createElement('script');
+            k.async = 1;
+            k.src = script;
+            c.appendChild(k);
+        }
+
+        window.tt.accountCode = 'da0e8764-2846-4dcc-a7d2-c2a6366cd91c';
+
+    })(window, document, '//s.tintim.app/static/core/tintim-1.0.js');
+</script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#10A37A">
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Mundo Animal · Clínica Veterinária 24h em Goiânia">
+<meta property="og:description" content="Atendimento veterinário completo 24 horas: emergência, internação, cirurgia, exames e suporte imediato para cães e gatos.">
+<meta property="og:image" content="https://emergencia.mundoanimalvet.com.br/assets/hero.jpg">
+<meta property="og:url" content="https://emergencia.mundoanimalvet.com.br/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Preconnect + preload da fonte -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Preload da imagem de hero (LCP) — só baixa a variante da media query correspondente -->
+<link rel="preload" as="image" href="assets/hero.jpg" media="(min-width:641px)">
+<link rel="preload" as="image" href="assets/hero-mobile.jpg" media="(max-width:640px)">
+
+<!-- Dados estruturados — SEO/AEO/GEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VeterinaryCare",
+  "name": "Mundo Animal · Clínica Veterinária 24h",
+  "image": "https://emergencia.mundoanimalvet.com.br/assets/hero.jpg",
+  "url": "https://emergencia.mundoanimalvet.com.br/",
+  "telephone": "+5562981890399",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. C-209, 386 - Jardim América",
+    "addressLocality": "Goiânia",
+    "addressRegion": "GO",
+    "postalCode": "74270-220",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "179"
+  }
+}
+</script>
 <style>
 /* ===================== TOKENS — DNA VISUAL MUNDO ANIMAL ===================== */
 :root{
@@ -21,7 +105,7 @@
   --surface-2:#F0F8F5;
   --t1:#0F2A22;
   --t2:#4A5E57;
-  --t3:#81958E;
+  --t3:#64786F;
   --border:#E1EFE9;
   --radius:20px;
   --radius-sm:14px;
@@ -111,7 +195,7 @@ header{
 /* ===================== HERO ===================== */
 .hero{
   position:relative;padding:48px 0 52px;overflow:hidden;isolation:isolate;
-  background-image:url('assets/hero.png');
+  background-image:url('assets/hero.jpg');
   background-size:cover;background-position:right center;background-repeat:no-repeat;
 }
 /* overlay p/ garantir contraste do texto sobre a imagem */
@@ -299,12 +383,6 @@ footer ul a:hover{color:#fff}
 .foot-credit a{color:#cfe0da;font-weight:600;transition:color .2s}
 .foot-credit a:hover{color:#fff}
 
-/* botão flutuante emergência mobile */
-.floating-emg{
-  position:fixed;bottom:20px;right:20px;z-index:70;display:none;
-  box-shadow:0 14px 34px rgba(230,57,70,.5);animation:floaty 3s ease-in-out infinite;
-}
-
 /* ===================== REVEAL ANIM ===================== */
 .reveal{opacity:0;transform:translateY(34px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
 .reveal.in{opacity:1;transform:none}
@@ -332,7 +410,7 @@ footer ul a:hover{color:#fff}
   .hero .hero-copy{max-width:100%}
   .hero-photo-m{
     display:block;margin-top:26px;height:330px;border-radius:22px;
-    background-image:url('assets/hero-mobile.png');
+    background-image:url('assets/hero-mobile.jpg');
     background-size:cover;background-position:center 46%;background-repeat:no-repeat;
     box-shadow:var(--shadow-md);
   }
@@ -349,7 +427,6 @@ footer ul a:hover{color:#fff}
   .urg-inner .btn{width:100%}
   .foot-grid{grid-template-columns:1fr}
   .slide{flex-basis:280px;height:240px}
-  .floating-emg{display:inline-flex}
 }
 @media (max-width:420px){
   .svc-grid,.pillar-grid,.stats-grid{grid-template-columns:1fr}
@@ -363,12 +440,15 @@ footer ul a:hover{color:#fff}
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8F2RVS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- ============ HEADER ============ -->
 <header>
   <div class="wrap nav">
     <a href="#" class="logo">
-      <img class="logo-img" src="assets/logo-verde.png" alt="Mundo Animal - Clínica Veterinária e Pet Shop">
+      <img class="logo-img" src="assets/logo-verde.png" alt="Mundo Animal - Clínica Veterinária e Pet Shop" width="251" height="73">
     </a>
     <nav class="nav-links">
       <a href="#servicos">Serviços</a>
@@ -381,7 +461,7 @@ footer ul a:hover{color:#fff}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
         <span>(62) 98189-0399</span>
       </a>
-      <a href="tel:+5562981890399" class="btn btn-emergency" style="padding:11px 20px;font-size:.92rem"><span class="dot"></span>Emergência 24h</a>
+      <a href="https://wa.me/5562942633340" target="_blank" rel="noopener" class="btn btn-emergency" style="padding:11px 20px;font-size:.92rem"><span class="dot"></span>Emergência 24h</a>
     </div>
   </div>
 </header>
@@ -411,7 +491,7 @@ footer ul a:hover{color:#fff}
             Meu pet precisa agora
           </span>
           <p>Emergência ou pet em risco? Fale direto com a equipe de plantão.</p>
-          <a href="tel:+5562981890399" class="btn btn-emergency">
+          <a href="https://wa.me/5562942633340" target="_blank" rel="noopener" class="btn btn-emergency">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
             Ligar para emergência
           </a>
@@ -419,12 +499,12 @@ footer ul a:hover{color:#fff}
         <div class="path-card">
           <span class="path-tag green">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            Quero agendar rotina
+            Preciso de orientação
           </span>
-          <p>Consultas, vacinas e exames de rotina no melhor horário para você.</p>
-          <a href="#contato" class="btn btn-primary">
+          <p>Não sabe se é emergência? Envie os dados e fale com a equipe.</p>
+          <a href="https://wa.me/5562942633340" target="_blank" rel="noopener" class="btn btn-primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-            Agendar consulta
+            Solicitar ligação
           </a>
         </div>
       </div>
@@ -439,35 +519,35 @@ footer ul a:hover{color:#fff}
       </div>
     </div>
     <!-- foto dos pets — visível só no mobile -->
-    <div class="hero-photo-m" role="img" aria-label="Cão e gato atendidos na Mundo Animal"></div>
+    <div class="hero-photo-m reveal d5" role="img" aria-label="Cão e gato atendidos na Mundo Animal"></div>
   </div>
 </section>
 
 <!-- ============ STATS / SELOS ANIMADOS ============ -->
 <section class="stats">
   <div class="wrap">
-    <div class="stats-grid reveal">
-      <div class="stat">
+    <div class="stats-grid">
+      <div class="stat reveal">
         <div class="num"><span class="count" data-to="37">0</span></div>
         <div class="lbl">anos de mercado</div>
       </div>
-      <div class="stat">
+      <div class="stat reveal d1">
         <div class="num"><span class="count" data-to="24">0</span><span class="suf">h</span></div>
         <div class="lbl">de portas abertas</div>
         <span class="live"><span class="dot dot-live" style="width:7px;height:7px"></span>ativo agora</span>
       </div>
-      <div class="stat">
+      <div class="stat reveal d2">
         <div class="num"><span class="count" data-to="4.7">0</span><span class="suf star">★</span></div>
         <div class="lbl lbl-google">
           <svg class="g-logo" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.06 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h6.2a5.3 5.3 0 0 1-2.3 3.48v2.89h3.72c2.18-2 3.44-4.96 3.44-8.38z"/><path fill="#34A853" d="M12 24c3.1 0 5.7-1.03 7.6-2.78l-3.72-2.89c-1.03.69-2.35 1.1-3.88 1.1-2.98 0-5.5-2.01-6.4-4.72H1.76v2.98A11.5 11.5 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.6 14.71a6.9 6.9 0 0 1 0-4.42V7.31H1.76a11.5 11.5 0 0 0 0 10.38l3.84-2.98z"/><path fill="#EA4335" d="M12 4.75c1.68 0 3.19.58 4.38 1.72l3.28-3.28C17.7 1.3 15.1.25 12 .25A11.5 11.5 0 0 0 1.76 6.31l3.84 2.98C6.5 6.76 9.02 4.75 12 4.75z"/></svg>
           179 avaliações no Google
         </div>
       </div>
-      <div class="stat">
+      <div class="stat reveal d3">
         <div class="num"><span class="count" data-to="100">0</span></div>
         <div class="lbl">de NPS · satisfação e lealdade</div>
       </div>
-      <div class="stat">
+      <div class="stat reveal d4">
         <div class="num"><span class="suf">+</span><span class="count" data-to="10">0</span></div>
         <div class="lbl">especialidades num só lugar</div>
       </div>
@@ -531,8 +611,8 @@ footer ul a:hover{color:#fff}
 
     <!-- CTA VARIAÇÃO 1 -->
     <div class="sec-cta reveal">
-      <a href="#contato" class="btn btn-primary btn-lg">
-        Ver disponibilidade agora
+      <a href="https://wa.me/5562942633340" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        Solicitar ligação agora
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
@@ -577,19 +657,19 @@ footer ul a:hover{color:#fff}
   </div>
   <div class="wrap carousel">
     <div class="carousel-track" id="track">
-      <figure class="slide" data-src="assets/carrossel/14.jpg"><img src="assets/carrossel/14.jpg" alt="Médica veterinária da Mundo Animal com pet" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/11.jpg"><img src="assets/carrossel/11.jpg" alt="Equipe da Mundo Animal com pet" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/12.jpg"><img src="assets/carrossel/12.jpg" alt="Equipe da Mundo Animal com pet" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/01.jpg"><img src="assets/carrossel/01.jpg" alt="Equipe da Mundo Animal com pet" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/02.jpg"><img src="assets/carrossel/02.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/03.jpg"><img src="assets/carrossel/03.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/04.jpg"><img src="assets/carrossel/04.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/05.jpg"><img src="assets/carrossel/05.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/06.jpg"><img src="assets/carrossel/06.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/07.jpg"><img src="assets/carrossel/07.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/08.jpg"><img src="assets/carrossel/08.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/09.jpg"><img src="assets/carrossel/09.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
-      <figure class="slide" data-src="assets/carrossel/10.jpg"><img src="assets/carrossel/10.jpg" alt="Estrutura da clínica Mundo Animal" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/14.jpg"><img src="assets/carrossel/14.jpg" alt="Médica veterinária da Mundo Animal com pet" width="640" height="640" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/11.jpg"><img src="assets/carrossel/11.jpg" alt="Equipe da Mundo Animal com pet" width="247" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/12.jpg"><img src="assets/carrossel/12.jpg" alt="Equipe da Mundo Animal com pet" width="246" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/01.jpg"><img src="assets/carrossel/01.jpg" alt="Equipe da Mundo Animal com pet" width="246" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/02.jpg"><img src="assets/carrossel/02.jpg" alt="Estrutura da clínica Mundo Animal" width="246" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/03.jpg"><img src="assets/carrossel/03.jpg" alt="Estrutura da clínica Mundo Animal" width="246" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/04.jpg"><img src="assets/carrossel/04.jpg" alt="Estrutura da clínica Mundo Animal" width="246" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/05.jpg"><img src="assets/carrossel/05.jpg" alt="Estrutura da clínica Mundo Animal" width="247" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/06.jpg"><img src="assets/carrossel/06.jpg" alt="Estrutura da clínica Mundo Animal" width="247" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/07.jpg"><img src="assets/carrossel/07.jpg" alt="Estrutura da clínica Mundo Animal" width="246" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/08.jpg"><img src="assets/carrossel/08.jpg" alt="Estrutura da clínica Mundo Animal" width="246" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/09.jpg"><img src="assets/carrossel/09.jpg" alt="Estrutura da clínica Mundo Animal" width="246" height="248" loading="lazy"></figure>
+      <figure class="slide" data-src="assets/carrossel/10.jpg"><img src="assets/carrossel/10.jpg" alt="Estrutura da clínica Mundo Animal" width="246" height="248" loading="lazy"></figure>
     </div>
     <div class="carousel-nav">
       <button class="cbtn" id="prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -625,8 +705,8 @@ footer ul a:hover{color:#fff}
     </div>
     <!-- CTA VARIAÇÃO 2 -->
     <div class="sec-cta reveal">
-      <a href="#contato" class="btn btn-primary btn-lg">
-        Quero esse cuidado pro meu pet
+      <a href="https://wa.me/5562942633340" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        Quero atendimento imediato
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-4.5-9-10a5 5 0 019-3 5 5 0 019 3c-2 5.5-9 10-9 10z"/></svg>
       </a>
     </div>
@@ -643,7 +723,7 @@ footer ul a:hover{color:#fff}
         <p>Se é uma emergência, cada minuto conta. Nossa equipe de plantão está pronta para atender agora mesmo.</p>
       </div>
       <!-- CTA VARIAÇÃO 3 -->
-      <a href="tel:+5562981890399" class="btn btn-white btn-lg">
+      <a href="https://wa.me/5562942633340" target="_blank" rel="noopener" class="btn btn-white btn-lg">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
         Emergência? Fale com a equipe 24h
       </a>
@@ -655,9 +735,9 @@ footer ul a:hover{color:#fff}
 <section class="final" id="contato">
   <div class="wrap final-grid">
     <div class="final-copy reveal">
-      <span class="kicker">Agende agora</span>
+      <span class="kicker">Emergência veterinária</span>
       <!-- COPY --><h2>Marque Agora <span class="grad">Atendimento Imediato</span></h2>
-      <p class="lead">Escolha o melhor horário para a consulta de rotina do seu pet ou ligue direto se for emergência.</p>
+      <p class="lead">Preencha os dados principais e confirme a ligação. A equipe recebe o pedido para falar com você o quanto antes.</p>
       <ul>
         <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><!-- COPY -->R. C-209, 386 - Jardim América, Goiânia - GO, 74270-220<small>Nossa localização</small></div></li>
         <li><span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg></span><div><!-- COPY -->(62) 98189-0399<small>Telefone e WhatsApp</small></div></li>
@@ -666,23 +746,24 @@ footer ul a:hover{color:#fff}
     </div>
 
     <div class="contact-card reveal d1">
-      <h3>Agendar consulta de rotina</h3>
-      <p class="sub">Preencha e a equipe retorna para confirmar o horário.</p>
-      <form onsubmit="return false">
-        <div class="field"><label>Seu nome</label><input type="text" placeholder="Como podemos te chamar?"></div>
-        <div class="field"><label>WhatsApp</label><input type="tel" placeholder="(62) 90000-0000"></div>
-        <div class="field"><label>Nome e tipo do pet</label><input type="text" placeholder="Ex.: Thor, cachorro"></div>
-        <div class="field"><label>Tipo de atendimento</label>
-          <select>
-            <option>Consulta de rotina</option>
-            <option>Vacinação</option>
-            <option>Exames</option>
-            <option>Cirurgia</option>
-            <option>Outro</option>
+      <h3>Confirmar ligação de emergência</h3>
+      <p class="sub">Informe seus dados para a equipe entender o caso antes de retornar.</p>
+      <form action="https://tintim.link/whatsapp/9bf8effc-cf5f-49df-b58a-223449315eca/b634a43b-2bbf-4eec-a2af-ce8c346da5b5" method="get" target="_blank">
+        <input type="hidden" name="origem" value="lp-emergencia-mundo-animal">
+        <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required></div>
+        <div class="field"><label for="f-whats">WhatsApp</label><input id="f-whats" name="whatsapp" type="tel" autocomplete="tel" placeholder="(62) 90000-0000" required></div>
+        <div class="field"><label for="f-pet">Nome e tipo do pet</label><input id="f-pet" name="pet" type="text" placeholder="Ex.: Thor, cachorro"></div>
+        <div class="field"><label for="f-tipo">Situação do pet</label>
+          <select id="f-tipo" name="tipo_atendimento">
+            <option>Emergência / risco agora</option>
+            <option>Acidente ou trauma</option>
+            <option>Dor, vômito ou apatia</option>
+            <option>Dificuldade para respirar</option>
+            <option>Outro sintoma urgente</option>
           </select>
         </div>
-        <a href="tel:+5562981890399" class="btn btn-primary">Marque Agora - Atendimento Imediato</a>
-        <div class="contact-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round"/></svg>É emergência? <a href="tel:+5562981890399" style="color:var(--accent-deep);font-weight:600;margin-left:4px">Ligue agora 24h</a></div>
+        <button type="submit" class="btn btn-primary">Confirmar ligação agora</button>
+        <div class="contact-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round"/></svg>Ao clicar, você confirma o pedido de ligação para atendimento imediato.</div>
       </form>
     </div>
   </div>
@@ -694,7 +775,7 @@ footer ul a:hover{color:#fff}
     <div class="foot-grid">
       <div>
         <a href="#" class="logo">
-          <img class="logo-img" src="assets/logo-branca.png" alt="Mundo Animal - Clínica Veterinária e Pet Shop">
+          <img class="logo-img" src="assets/logo-branca.png" alt="Mundo Animal - Clínica Veterinária e Pet Shop" width="166" height="104">
         </a>
         <p>Atendimento veterinário completo 24 horas. Porque seu pet merece o melhor, sempre.</p>
       </div>
@@ -719,8 +800,8 @@ footer ul a:hover{color:#fff}
   </div>
 </footer>
 
-<!-- botão flutuante emergência (mobile) -->
-<a href="tel:+5562981890399" class="btn btn-emergency floating-emg"><span class="dot"></span>Emergência 24h</a>
+<!-- botão flutuante WhatsApp -->
+<a href="https://wa.me/5562942633340" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" style="position: fixed; z-index: 9999; right: 20px; bottom: 20px; width: 64px; height: 64px; display: flex; justify-content: center; align-items: center; background: #00AD57; border-radius: 100%;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFFFFF" width="32" height="32"><path d="M7.25361 18.4944L7.97834 18.917C9.18909 19.623 10.5651 20 12.001 20C16.4193 20 20.001 16.4183 20.001 12C20.001 7.58172 16.4193 4 12.001 4C7.5827 4 4.00098 7.58172 4.00098 12C4.00098 13.4363 4.37821 14.8128 5.08466 16.0238L5.50704 16.7478L4.85355 19.1494L7.25361 18.4944ZM2.00516 22L3.35712 17.0315C2.49494 15.5536 2.00098 13.8345 2.00098 12C2.00098 6.47715 6.47813 2 12.001 2C17.5238 2 22.001 6.47715 22.001 12C22.001 17.5228 17.5238 22 12.001 22C10.1671 22 8.44851 21.5064 6.97086 20.6447L2.00516 22ZM8.39232 7.30833C8.5262 7.29892 8.66053 7.29748 8.79459 7.30402C8.84875 7.30758 8.90265 7.31384 8.95659 7.32007C9.11585 7.33846 9.29098 7.43545 9.34986 7.56894C9.64818 8.24536 9.93764 8.92565 10.2182 9.60963C10.2801 9.76062 10.2428 9.95633 10.125 10.1457C10.0652 10.2428 9.97128 10.379 9.86248 10.5183C9.74939 10.663 9.50599 10.9291 9.50599 10.9291C9.50599 10.9291 9.40738 11.0473 9.44455 11.1944C9.45903 11.25 9.50521 11.331 9.54708 11.3991C9.57027 11.4368 9.5918 11.4705 9.60577 11.4938C9.86169 11.9211 10.2057 12.3543 10.6259 12.7616C10.7463 12.8783 10.8631 12.9974 10.9887 13.108C11.457 13.5209 11.9868 13.8583 12.559 14.1082L12.5641 14.1105C12.6486 14.1469 12.692 14.1668 12.8157 14.2193C12.8781 14.2457 12.9419 14.2685 13.0074 14.2858C13.0311 14.292 13.0554 14.2955 13.0798 14.2972C13.2415 14.3069 13.335 14.2032 13.3749 14.1555C14.0984 13.279 14.1646 13.2218 14.1696 13.2222V13.2238C14.2647 13.1236 14.4142 13.0888 14.5476 13.097C14.6085 13.1007 14.6691 13.1124 14.7245 13.1377C15.2563 13.3803 16.1258 13.7587 16.1258 13.7587L16.7073 14.0201C16.8047 14.0671 16.8936 14.1778 16.8979 14.2854C16.9005 14.3523 16.9077 14.4603 16.8838 14.6579C16.8525 14.9166 16.7738 15.2281 16.6956 15.3913C16.6406 15.5058 16.5694 15.6074 16.4866 15.6934C16.3743 15.81 16.2909 15.8808 16.1559 15.9814C16.0737 16.0426 16.0311 16.0714 16.0311 16.0714C15.8922 16.159 15.8139 16.2028 15.6484 16.2909C15.391 16.428 15.1066 16.5068 14.8153 16.5218C14.6296 16.5313 14.4444 16.5447 14.2589 16.5347C14.2507 16.5342 13.6907 16.4482 13.6907 16.4482C12.2688 16.0742 10.9538 15.3736 9.85034 14.402C9.62473 14.2034 9.4155 13.9885 9.20194 13.7759C8.31288 12.8908 7.63982 11.9364 7.23169 11.0336C7.03043 10.5884 6.90299 10.1116 6.90098 9.62098C6.89729 9.01405 7.09599 8.4232 7.46569 7.94186C7.53857 7.84697 7.60774 7.74855 7.72709 7.63586C7.85348 7.51651 7.93392 7.45244 8.02057 7.40811C8.13607 7.34902 8.26293 7.31742 8.39232 7.30833Z"></path></svg></a>
 
 <script>
 (function(){

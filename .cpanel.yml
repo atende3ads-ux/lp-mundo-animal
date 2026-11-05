@@ -1,0 +1,11 @@
+---
+deployment:
+  tasks:
+    # Raizes dos subdominios conferidas em cPanel > Dominios (conta mundoa24).
+    - /bin/mkdir -p /home2/mundoa24/emergencia.mundoanimalvet.com.br/assets /home2/mundoa24/estetica.mundoanimalvet.com.br/assets
+    # Copia apenas os arquivos geridos por este repositorio. Preserva .well-known,
+    # robots.txt, sitemap.xml e outros arquivos existentes no servidor.
+    - /usr/bin/rsync -rltv --chmod=D755,F644 ./assets/ /home2/mundoa24/emergencia.mundoanimalvet.com.br/assets/
+    - /usr/bin/rsync -ltv --chmod=F644 ./index.html /home2/mundoa24/emergencia.mundoanimalvet.com.br/index.html
+    - /usr/bin/rsync -rltv --chmod=D755,F644 ./banho-e-tosa/assets/ /home2/mundoa24/estetica.mundoanimalvet.com.br/assets/
+    - /usr/bin/rsync -ltv --chmod=F644 ./banho-e-tosa/index.html /home2/mundoa24/estetica.mundoanimalvet.com.br/index.html
